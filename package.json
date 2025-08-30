@@ -1,0 +1,28 @@
+{
+  "name": "google-photos-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Google Photos integration with 2025 API limitations",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "clean": "rm -rf build"
+  },
+  "keywords": ["mcp", "google-photos", "model-context-protocol"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "googleapis": "^144.0.0",
+    "google-auth-library": "^9.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
